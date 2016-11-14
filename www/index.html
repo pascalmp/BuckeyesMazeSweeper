@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/maze.js"></script>
+</head>
+<body>
+<div class="startStop">
+    <h1>TOUCHDOWN</h1>
+</div>
+<div class="gridSection">
+	<div id="r1c1" class="gridBlocks"></div>
+    <div id="r1c2" class="gridBlocks"></div>
+    <div id="r1c3" class="gridBlocks"></div>
+    <div id="r1c4" class="gridBlocks"></div>
+    <div id="r1c5" class="gridBlocks"></div>
+</div>
+<div class="gridSection">
+    <div id="r2c1" class="gridBlocks"></div>
+    <div id="r2c2" class="gridBlocks"></div>
+    <div id="r2c3" class="gridBlocks"></div>
+    <div id="r2c4" class="gridBlocks"></div>
+    <div id="r2c5" class="gridBlocks"></div>
+</div>
+<div class="gridSection">
+    <div id="r3c1" class="gridBlocks"></div>
+    <div id="r3c2" class="gridBlocks"></div>
+    <div id="r3c3" class="gridBlocks"></div>
+    <div id="r3c4" class="gridBlocks"></div>
+    <div id="r3c5" class="gridBlocks"></div>
+</div>
+<div class="gridSection">
+    <div id="r4c1" class="gridBlocks"></div>
+    <div id="r4c2" class="gridBlocks" onclick="rightBlock('r4c3','r4c2')"></div>
+    <div id="r4c3" class="gridBlocks" onclick="rightBlock('r4c4','r4c3')"></div>
+    <div id="r4c4" class="gridBlocks" onclick="rightBlock('r5c4','r4c4')"></div>
+    <div id="r4c5" class="gridBlocks"></div>
+</div>
+<div class="gridSection">
+    <div id="r5c1" class="gridBlocks"></div>
+    <div id="r5c2" class="gridBlocks"></div>
+    <div id="r5c3" class="gridBlocks" onclick="wrongBlock()"></div>
+    <div id="r5c4" class="gridBlocks" onclick="rightBlock('r5c5','r5c4')"></div>
+    <div id="r5c5" class="gridBlocks" onclick="rightBlock('r6c5','r5c5')"></div>
+</div>
+<div class="gridSection">
+    <div id="r6c1" class="gridBlocks"></div>
+    <div id="r6c2" class="gridBlocks"></div>
+    <div id="r6c3" class="gridBlocks"></div>
+    <div id="r6c4" class="gridBlocks"></div>
+    <div id="r6c5" class="gridBlocks" onclick="firstBlock('r6c5')"></div>
+</div>
+<div class="startStop" style="margin-bottom: 10px" onclick="pressSTART()">
+    <h1 id="start">GO BUCKS!</h1>
+</div>
+<div id="gameOver">
+    <h1>GAME OVER</h1>
+    <h3>PRESS START TO RESET</h3>
+</div>
+<div id="nutSection">
+    <img id="buck0" class="nutStyle" src="images/buckeye.png" alt="buckeye nut" />
+    <img id="buck1" class="nutStyle" src="images/buckeye.png" alt="buckeye nut" />
+    <img id="buck2" class="nutStyle" src="images/buckeye.png" alt="buckeye nut" />
+    <img id="buck3" class="nutStyle" src="images/buckeye.png" alt="buckeye nut" />
+    <img id="buck4" class="nutStyle" src="images/buckeye.png" alt="buckeye nut" />
+    <img id="buck5" class="nutStyle" src="images/buckeye.png" alt="buckeye nut" />
+    <img id="buck6" class="nutStyle" src="images/buckeye.png" alt="buckeye nut" />
+    <img id="buck7" class="nutStyle" src="images/buckeye.png" alt="buckeye nut" />
+</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+body {
+    background-color:#454545;
+}
+    
+.gridSection {
+    margin-left:3%;    
+}
+.startStop {
+    background-color:#91120D;
+    width:91%;
+    height:40px;
+    border-color: #eee;
+    border-style: solid;
+    border-width: 1%;
+    border-radius:2px;
+    float:left;
+    margin: 1%;
+    margin-left:4%;;
+}
+.startStop h1 {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Press Start 2P', cursive;
+    color:#eee;
+}
+.gridBlocks {
+    background-color:#2D8433;
+    width:16%;
+    height:40px;
+    border-color: #eee;
+    border-style: solid;
+    border-width: 1%;
+    border-radius:2px;
+    float:left;
+    margin: 1%;
+}
+.done {
+    background-color:#91120D;
+    width:16%;
+    height:40px;
+    border-color: #eee;
+    border-style: solid;
+    border-width: 1%;
+    border-radius:2px;
+    float:left;
+    margin: 1%;
+}
+
+.nutStyle {
+    width:20%;
+    margin-top:3%;
+}
+#nutSection {
+    width:100%;
+    text-align:center;
+}
+#gameOver {
+    display: none;
+}
+#gameOver h1{
+    font-family:'Press Start 2P', cursive;
+    font-size: 40px;
+    color: white;
+    text-align: center;   
+}
+#gameOver h3{
+    font-family:'Press Start 2P', cursive;
+    font-size: 7px;
+    color: white;
+    text-align: center;   
+}
